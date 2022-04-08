@@ -4,7 +4,7 @@
   "description": "Disable mouse control when moving the cursor or selecting text.",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.66.0"
+    "vscode": "^1.63.0"
   },
   "categories": [
     "Other"
