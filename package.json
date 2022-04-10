@@ -10,14 +10,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:disable-mouse.helloWorld"
+    "*"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "disable-mouse.helloWorld",
-        "title": "Hello World"
+        "command": "disable-mouse.enable-mouse",
+        "title": "Disable Mouse: Temporarily Enable Mouse Usage"
       }
     ]
   },
