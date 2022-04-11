@@ -27,8 +27,10 @@ export class Timer {
 
   private countDown() {
     this.timeoutId = setTimeout(() => {
-      this.time -= 1000;
-      this.countDown();
+      this.time -= this.interval;
+      if (!this.hasEnded) {
+        this.countDown();
+      }
     }, this.interval);
   }
 }
