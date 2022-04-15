@@ -16,10 +16,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "disable-mouse.enable-mouse",
-        "title": "Disable Mouse: Temporarily Enable Mouse Usage"
+        "command": "disableMouse.enableMouse",
+        "title": "Disable Mouse: Temporarily Enable Mouse Use"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Disable Mouse",
+      "properties": {
+        "disableMouse.enableMouseTimeLimit": {
+          "description": "How long the mouse is activated when you temporarily enable mouse use (in seconds)",
+          "type": "number",
+          "default": 5
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
