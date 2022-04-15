@@ -1,6 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import { config } from './config';
 import { Timer } from './timer';
 
 let previousTextEditor: vscode.TextEditor | null = null;
@@ -32,7 +33,7 @@ export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
     'disableMouse.enableMouse',
     () => {
-      timer.set(3000);
+      timer.set(config.enableMouseTimeLimit * 1000);
     }
   );
 
