@@ -2,13 +2,19 @@
   "name": "disable-mouse",
   "displayName": "Disable Mouse",
   "description": "Disable mouse control when moving the cursor or selecting text.",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shio-yaamaa/vscode-disable-mouse"
+  },
+  "homepage": "https://github.com/shio-yaamaa/vscode-disable-mouse/blob/main/README.md",
   "engines": {
     "vscode": "^1.63.0"
   },
   "categories": [
     "Other"
   ],
+  "icon": "images/icon.png",
   "activationEvents": [
     "*"
   ],
